@@ -11,7 +11,7 @@ app.get("/api", (req, res) => {
 
 app.post("/api/posts", (req, res) => {
   res.json({
-    message: "Post Created...",
+    message: "Post Created....",
   });
 });
 
