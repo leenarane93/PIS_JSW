@@ -10,7 +10,6 @@ app.get("/api", (req, res) => {
 });
 
 app.post("/api/posts", verifyToken, (req, res) => {
-  console.log(req.token);
   jwt.verify(req.token, "secretKey", (err, authData) => {
     if (err) {
       res.sendStatus(403);
